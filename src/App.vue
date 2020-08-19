@@ -18,4 +18,10 @@ export default {
 <style>
 @import "assets/index.css";
 
+#app{
+  height: 100vh;
+  background-image: url('./assets/background.png');
+  background-attachment: fixed;
+  background-position: center;
+}
 </style>
