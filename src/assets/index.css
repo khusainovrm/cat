@@ -1,0 +1,41 @@
+/*  900 >>>>>>>> */
+@media screen and (min-width: 900px) {
+  .class {
+    background: pink;
+  }
+}
+
+/* 600 >>>>>>> 900 */
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .class {
+    background: gold;
+  }
+}
+
+/* <<<<<<<< 660  */
+@media screen and (max-width: 600px) {
+  .class {
+    background: blue;
+  }
+}
+
+
+/* <<<<<<<< 480 */
+@media screen and (max-device-width: 480px) {
+  .class {
+    background: red;
+  }
+}
+
+@font-face {
+  font-family: 'Exo2.0';
+  src: url('/fonts/Exo2.0-Thin.otf');
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
