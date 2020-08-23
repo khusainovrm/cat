@@ -1,31 +1,33 @@
-/*  900 >>>>>>>> */
-@media screen and (min-width: 900px) {
-  .class {
-    background: pink;
-  }
-}
-
-/* 600 >>>>>>> 900 */
-@media screen and (min-width: 600px) and (max-width: 900px) {
-  .class {
-    background: gold;
-  }
-}
-
-/* <<<<<<<< 660  */
-@media screen and (max-width: 600px) {
-  .class {
-    background: blue;
-  }
+:root {
+  --blue: #1698d9;
+  --pink: #d91667;
+  --yellow: #feff65;
 }
 
 
-/* <<<<<<<< 480 */
-@media screen and (max-device-width: 480px) {
-  .class {
-    background: red;
+@media only screen and (max-width: 600px) {
+  .grid1frOnSmall {
+    grid-template-areas:"a" "b" "c"!important;
+  }
+
+  .gridItem{
+    height: 480px!important;
   }
 }
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .grid2fr2frOnMedium {
+    grid-template-areas:". a ." "b . c"!important;
+    /* grid-template-rows: max-content!important; */
+  }
+  .gridItem{
+    transform: scale(.62)!important;
+    height: 80px!important;
+  }
+}
+
+
+
 
 @font-face {
   font-family: 'Exo2.0';
@@ -37,5 +39,24 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  margin: 0px;
+}
+
+body{
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Exo2.0';
+  overflow-y: scroll;
+  background-image: url('../assets/background.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat:repeat;
+  user-select: none;
+}
+
+.flexFullCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }

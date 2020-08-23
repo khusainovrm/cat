@@ -11,19 +11,16 @@ export default {
 </script>
 
 <style scoped>
+
 .title-container{
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
+  margin: 69px auto 24px;
 }
 
 .title{
-	padding-top: 45px;
-	height: 44px;
+
 	font-size: 36px;
-	color: #ffffff;
-	font-family: "Exo2.0";
+	color: var(--pink);
+	font-family: "Exo 2.0 Bold";
 	text-align: center;
 	filter: drop-shadow(0px 1px 0.5px #000000);
 }

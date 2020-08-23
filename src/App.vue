@@ -17,11 +17,9 @@ export default {
 
 <style>
 @import "assets/index.css";
+@import url(https://allfont.ru/allfont.css?fonts=exo-20-bold);
 
-#app{
-  height: 100vh;
-  background-image: url('./assets/background.png');
-  background-attachment: fixed;
-  background-position: center;
+#app {
+  height: 100%;
 }
 </style>
